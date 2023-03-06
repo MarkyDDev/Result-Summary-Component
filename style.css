@@ -2,6 +2,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  display: block
 }
 
 .attribution a {
@@ -12,8 +13,65 @@
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  border: solid 3px red;
+  max-width: 1440px;
+}
+
+/*LEFT SECTION*/
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 10rem;
+  height: auto;
+  max-width: 25rem;
+
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  /*transizione del colore*/
+  border: none;
+  border-radius: 24px;
+}
+
+.left-section h2,
+p {
+  color: hsl(227, 6%, 71%);
+  font-weight: 2rem;
+  text-align: center;
+}
+
+.left-section span {
+  font-size: 4.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.left-section h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+/*circle box left section*/
+
+.result-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  background: linear-gradient(to bottom, hsl(252, 74%, 42%), hsla(241, 72%, 46%, 0));
 }
