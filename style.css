@@ -17,14 +17,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .box-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content;
-  border: solid 3px red;
   max-width: 1440px;
+  box-shadow: 9px 13px 15px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 24px;
 }
 
 /*LEFT SECTION*/
@@ -61,6 +64,11 @@ p {
   font-weight: 700;
 }
 
+
+.text {
+  width: 55%;
+}
+
 /*circle box left section*/
 
 .result-circle {
@@ -74,4 +82,147 @@ p {
   height: 10rem;
   text-align: center;
   background: linear-gradient(to bottom, hsl(252, 74%, 42%), hsla(241, 72%, 46%, 0));
+}
+
+/*right-section*/
+
+.right-section {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1.4rem;
+}
+
+.right-section h2 {
+  margin-left: 3rem;
+}
+
+/*box1*/
+.result-box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2rem;
+  background-color: hsl(0, 77%, 95%);
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.box-title1 {
+  color: hsl(0, 100%, 67%);
+}
+
+.result-box1 img {
+  width: 10%;
+}
+
+.result-box1 span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+
+/*box2*/
+
+.result-box2 {
+  border: solid 1px violet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2rem;
+  background-color: hsl(39, 100%, 95%);
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.box-title2 {
+  color: hsl(39, 100%, 56%);
+}
+
+.result-box2 img {
+  width: 10%;
+}
+
+.result-box2 span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+
+
+/*box3*/
+
+.result-box3 {
+  border: solid 1px violet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2rem;
+  background-color: hsl(166, 88%, 90%);
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.box-title3 {
+  color: hsl(166, 100%, 37%);
+}
+
+.result-box3 img {
+  width: 10%;
+}
+
+.result-box3 span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+
+/*box4*/
+
+.result-box4 {
+  border: solid 1px violet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 2rem;
+  background-color: hsl(235, 100%, 95%);
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.box-title4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.result-box4 img {
+  width: 10%;
+}
+
+.result-box4 span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 500;
+}
+
+/*Button*/
+.btn {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 7rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.button:active {
+  transform: translateY(2px);
 }
