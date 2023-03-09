@@ -2,7 +2,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  display: block
+  margin-top: 2rem;
 }
 
 .attribution a {
@@ -17,17 +17,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin: auto;
 }
 
 .box-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: min-content;
-  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   box-shadow: 9px 13px 15px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 24px;
+  grid-auto-flow: column;
+
 }
 
 /*LEFT SECTION*/
@@ -39,7 +40,7 @@ body {
   align-items: center;
   min-width: 10rem;
   height: auto;
-  max-width: 25rem;
+  max-width: 20rem;
 
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   /*transizione del colore*/
@@ -87,13 +88,20 @@ p {
 /*right-section*/
 
 .right-section {
-  display: grid;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.4rem;
+  height: auto;
+  max-width: 20rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  ;
 }
 
 .right-section h2 {
-  margin-left: 3rem;
+  text-align: left;
 }
 
 /*box1*/
@@ -106,6 +114,7 @@ p {
   border: none;
   border-radius: 10px;
   padding: 4px;
+  width: 100%;
 }
 
 .box-title1 {
@@ -133,6 +142,7 @@ p {
   border: none;
   border-radius: 10px;
   padding: 4px;
+  width: 100%;
 }
 
 .box-title2 {
@@ -161,6 +171,7 @@ p {
   border: none;
   border-radius: 10px;
   padding: 4px;
+  width: 100%;
 }
 
 .box-title3 {
@@ -188,6 +199,7 @@ p {
   border: none;
   border-radius: 10px;
   padding: 4px;
+  width: 100%;
 }
 
 .box-title4 {
@@ -207,6 +219,8 @@ p {
 .btn {
   margin: auto;
   margin-bottom: 1rem;
+  margin: auot;
+
 }
 
 .button {
@@ -217,6 +231,7 @@ p {
   padding: 0.8rem 7rem;
   cursor: pointer;
   transition: transform 0.2s;
+  min-width: 30px;
 }
 
 .button:hover {
